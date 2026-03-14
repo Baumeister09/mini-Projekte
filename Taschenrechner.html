@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taschenrechner</title>
+    <link rel="stylesheet" href="TaschenrechnerDesign.css">
 </head>
 <body>
+    <div class="calculator">
+        <!-- Anzeige des Taschenrechners -->
+        <div class="display"> 
+            <input type="text" id="display" disabled>
+        </div>
 
-    // Anzeige des Taschenrechners
-    <div> 
-        <input type="text" id="display" disabled>
-    </div>
-
-    // Tasten des Taschenrechners
-    <div>
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button value="0">0</button>
-        <button value="+">+</button>
-        <button value="-">-</button>
-        <button value="*">*</button>
-        <button value="/">/</button>
-        <button value="=">=</button>
-        <button value="C">C</button>
-        <button value="backspace">←</button>
+        <!-- Tasten des Taschenrechners -->
+        <div class="buttons">
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="/">/</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="*">*</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="-">-</button>
+            <button value="0">0</button>
+            <button value="C">C</button>
+            <button value="=">=</button>
+            <button value="+">+</button>
+            <button value="backspace">←</button>
+        </div>
     </div>
 </body>
 
-// JavaScript für die Funktionalität des Taschenrechners (wenn C gedrückt wird, wird das Display gelöscht, wenn backspace gedrückt wird, wird das letzte Zeichen gelöscht, wenn = gedrückt wird, wird die Berechnung durchgeführt, ansonsten wird der Wert der gedrückten Taste zum Display hinzugefügt)
+<!-- JavaScript für die Funktionalität des Taschenrechners (wenn C gedrückt wird, wird das Display gelöscht, wenn backspace gedrückt wird, wird das letzte Zeichen gelöscht, wenn = gedrückt wird, wird die Berechnung durchgeführt, ansonsten wird der Wert der gedrückten Taste zum Display hinzugefügt) -->
 <script>
     const display = document.getElementById("display");
     const buttons = document.querySelectorAll("button");
