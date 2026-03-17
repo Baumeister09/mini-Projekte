@@ -37,7 +37,7 @@
             <button value=".">.</button>
             <button value="Wurzel">√</button>
             <button value="%">%</button> 
-            <button value="^">^</button>
+            <button value="**">**</button>
         </div>
     </div>
 </body>
@@ -59,8 +59,9 @@
                 catch (error) {
                     display.value = "Error";
                 }
-            else if (value === "^") {
-                display.value = Math.pow(display.value, 2);
+            }
+            else if (value === "**") {
+                display.value = display.value + "**";
             }
             else if (value === "%") {
                 try {
