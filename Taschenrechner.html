@@ -36,7 +36,8 @@
             <button value=")">)</button>
             <button value=".">.</button>
             <button value="Wurzel">√</button>
-            <button value="%">%</button>
+            <button value="%">%</button> 
+            <button value="^">^</button>
         </div>
     </div>
 </body>
@@ -53,11 +54,13 @@
             }
             else if (value === "Wurzel") {
                 try {
-                    display.value = Math.sqrt(eval(display.value));
+                    display.value = Math.sqrt(display.value);
                 }
                 catch (error) {
                     display.value = "Error";
                 }
+            else if (value === "^") {
+                display.value = Math.pow(display.value, 2);
             }
             else if (value === "%") {
                 try {
